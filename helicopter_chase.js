@@ -1,7 +1,6 @@
 // Project Name: Helicopter Chase Game
-// Purpose: A simple 2D game where the player controls a helicopter that follows the mouse cursor.
-// The objective is to catch red dots that appear randomly on the screen. Each dot caught increases the score.
-// The game ends if the helicopter collides with a red dot or goes out of bounds.
+// This game is a simple 2D game where the player controls a helicopter that follows the mouse cursor
+// The objective is to catch red dots that appear randomly on the screen and each dot caught increases the score by 1 each time
 
 // Variables
 var copter;
