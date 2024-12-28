@@ -57,12 +57,14 @@ function setup() {
     createScoreDisplay();
 }
 
+// outputs Score board top left of the screen
 function createScoreDisplay() {
     var scoreLabel = new Text("Score: 0");
     scoreLabel.setPosition(20, 20);
     add(scoreLabel);
 }
 
+// updates score when helicopter touches red dot
 function updateScore() {
     var scoreLabel = getElementAt(20, 20);
     if (scoreLabel) {
@@ -70,17 +72,19 @@ function updateScore() {
     }
 }
 
+// allows helicopter to respawn
 function respawnCopter() {
     copter.setPosition(getWidth() / 2, getHeight() / 2);
 }
 
+// allows function to start
 function start() {
     setup();
     checkWalls();
     mouseMoveMethod(move);
     setTimer(reddot, 6000);
 }
-
+// allows the red dot to randomly get outputted around the screen except outside the map
 function reddot() {
     var x = Randomizer.nextInt(20, getWidth() - 20);
     var y = Randomizer.nextInt(20, getHeight() - 20);
